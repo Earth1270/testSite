@@ -1,0 +1,113 @@
+html,body {
+	height: 100%;
+	width: 100%;
+}
+.navbar {
+	background-color: #38546C;
+	padding: 0% 0% .5% 0%;
+	font-size: 1.2em;
+}
+.navbar-brand img {
+	padding: 0% 0% 0% 4%;
+	max-width: 9%;
+	float: left;
+}
+
+.navbar-default .navbar-nav li a {
+	color: #D5D5D5;
+}
+
+.navbar-default .navbar-nav li a:hover .navbar-default .navbar-nav li a.active {
+	color: #FFF;
+}
+
+
+#home {
+	background: url(companyPhoto.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width:  100%;
+	background-size: cover;
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: #b8c5cc;
+}
+
+.landing-text h1 {
+	font-size:  5m;
+	font-weight: 700;
+}
+
+.padding {
+	padding:  80px 0;
+	height: 80%;
+}
+.padding img {
+	width:  80%;
+}
+
+#fixed {
+	background: url(gateKeeper.jpg) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	position: relative;
+	width:  100%;
+	background-size:  60%;
+}
+
+#fixed h1 {
+	font-size: 80px;
+	font-weight: bold;
+	padding: 12% 0% 0% 5%;
+}
+	
+#fixed h2 {
+	font-size: 24px;
+	padding: 0% 0% 0% 75%;
+}
+
+
+footer {
+	width: 100%;
+	background-color:  #38546C;
+	padding: 2% 5% 2% 5%;
+	color: white;
+}
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: white;
+}
+.fa:hover {
+	color: #D5D5D5;
+	text-decoration: none;
+}
+.icon {
+	width: 70%;
+}
+.community {
+	width: 70%;
+
+}
+.birdseed {
+	color: yellow;
+}
+
+@media (max-width:  768px) {
+	.landing-text h1 {
+		font-size: 300%;
+	}
+	.fa {
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon {
+		padding-top: 5%;
+		max-width:  7%;
+	}
+}
