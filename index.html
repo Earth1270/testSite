@@ -4,53 +4,45 @@
 		<title>Company Name</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajaxlibs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstraphcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link href='style.css' rel='stylesheet'>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link href='style.css' rel='stylesheet'>		
 	</head>
 
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>	
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="tree.png"></a>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse-main">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="active" href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="indexServices.html">Services</a></li>		
-					<li><a href="caseStudies.html">Case Studies</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-	</nav>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("navbar.html");
+});
+</script>
+<!--end of Navigation bar-->
 
 	<div id="home">
 		<div class="landing-text">
 			<h1 class="lead" style="font-size:48px;">Company Name</h1>
 			<h3 class="lead">Optimize Your Supply Chain</h3>
-			<a href="#" class="btn btn-default btn-lg">Get Started</a>
+			<a href="#about" class="btn btn-default btn-lg">Get Started</a>
 		</div>
 	</div>
 
-<div class="padding">
+<div class="padding" id="about">
 <div class="container">
+	<h1> </h1><br><br>
 	<div class="row">
-		<div class="col-sm-6">
+		<div class="col-lg-6 col-sm-12">
 			<img src="smTree.png">
 		</div>
-		<div class="col-sm-6 text-center">
+		<div class="col-lg-6 col-sm-12 text-center">
 			<h2>How we drive optimization</h2>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		</div>
 	</div>
 </div>
@@ -58,12 +50,13 @@
 
 <div id="fixed">
 	<h1>This is Us</h1>	
-	<br><br><br><br><br><br><br><br><br><br><br>
-	<h2>Ms Blue - President</h2>
-	<h2>Mr Red - Vice President</h2>
-	<h2>Ms Yellow - Consultant</h2>
-	<h2>Ms Green - Consultant</h2>
-	<h2>Mr Gray - Consultant</h2>
+	<div id="employeeList">
+		<h2>Ms Blue - President</h2>
+		<h2>Mr Red - Vice President</h2>
+		<h2>Ms Yellow - Consultant</h2>
+		<h2>Ms Green - Consultant</h2>
+		<h2>Mr Gray - Consultant</h2>
+	</div>
 </div>
 
 <div class="padding">
@@ -72,7 +65,7 @@
 		<div class="col-sm-6">
 			<h2>What we do for the community</h2>
 			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
 		</div>
 		<div class="col-sm-6">
 				<div class="community">
@@ -82,8 +75,8 @@
 	</div>
 </div>
 
-
-<footer class="container-fluid text-center">
+<!--Footer-->
+<footer class="container-fluid text-center" id="landing-footer">
 	<div class="row">
 		<div class="col-sm-4">
 			<h3>Contact Us</h3>
@@ -98,7 +91,7 @@
 			<a href="#"	class="fa fa-instagram"></a>
 		</div>
 		<div class="col-sm-4">
-			<div class="icon">
+			<div id="icon">
 				<img src="tree.png">
 			</div>
 		</div>
@@ -107,7 +100,7 @@
 		<h6>Birdseed...</h6>
 	</div>
 </footer>
-
+<!--end of Footer-->
 </div>
 
 
