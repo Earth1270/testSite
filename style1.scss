@@ -1,0 +1,210 @@
+
+$colors: (
+	main: #b8c5cc,
+	dark: #121314,
+	banner: #38546C,
+	background:  black,
+	hover: #d5d5d5,
+	white: #FFF,
+	birdseed: yellow,
+	form: #5b965b,
+	table: #6aaf6a,
+);
+
+@function color($color-name) {
+	@return map-get($colors, $color-name)
+}
+
+html,body {
+	height: 100%;
+	width: 100%;
+	background-color:  color(background);
+}
+.navbar {
+	background-color: color(banner);
+	padding: 0% 0% .5% 0%;
+	font-size: 1.2em;
+}
+.navbar-brand img {
+	padding: 0% 0% 0% 4%;
+	max-width: 9%;
+	float: left;
+}
+
+.navbar-default .navbar-nav li a {
+	color: color(hover);
+	li a:hover .navbar-default .navbar-nav li a.active {
+	color: color(white);
+	}
+}
+
+#home {
+	background: url(companyPhoto.jpg) no-repeat center center fixed;
+	background-size: cover;
+	display: table;
+	height: 100%;
+	width:  100%;
+	position: relative;
+}
+
+.landing-text {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	color: color(main);
+	h1 {
+		font-size:  5m;
+		font-weight: 700;		
+	}
+}
+
+.padding {
+	padding:  80px 0;
+	height: 100%;
+	color: color(main);
+	img {
+		width:  80%;	
+	}
+}
+.padding2 {
+	padding:  80px 0;
+	height:  120%;
+	color: color(main);
+}
+
+#fixed {
+	background: url(gateKeeper.png) no-repeat center center fixed;
+	display: table;
+	height: 100%;
+	width:  100%;
+	position: relative;
+	background-size:  60%;
+	h1 {
+		font-size: 80px;
+		font-weight: bold;
+		padding: 12% 0% 0% 5%;
+		color: color(main);	
+	}
+	#employeeList {
+		padding: 15% 0% 0% 75%;
+	}
+	h2 {
+		font-size: 24px;
+		color: color(main);		
+	}
+	h3 {
+		font-size: 50px;
+		font-weight: bold;
+		padding: 12% 0% 0% 5%;
+		color: color(main);
+	}
+}
+
+.fa {
+	padding: 15px;
+	font-size: 25px;
+	color: color(main);
+	&:hover {
+		color: color(hover);
+		text-decoration: none;
+	}	
+}
+.community {
+	width: 70%;
+}
+
+.jumbotron {
+	background: url(Taiping.jpg) no-repeat center center fixed;
+	color: color(dark);
+	height:  100%;
+	width: 100%;
+	background-color: color(background);
+	text-align: center;
+	form {
+		margin-left: 40%;
+		margin-right: 40%;
+		border-radius: 5rem;
+		background-color: color(form);
+		color: #121314;
+		text-align: center;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;
+		text-align: center;
+		opacity: .85;	
+	}
+	%table {
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 0rem;
+		background-color: color(table);
+		color: color(dark);
+		text-align: center;	
+		border: 2px solid black;
+		border-collapse: collapse;
+		opacity: .85;
+		th, td {
+			text-align: center;
+			padding: .5rem 2rem;
+			border: 1px solid black;	
+		}
+	}
+	#services{
+		@extend %table;
+		font-size: 3.5rem;
+	}
+	#cases{
+		@extend %table;
+		font-size: 2rem;
+	}
+}
+#paid {
+	background: url(Paid2.jpg) no-repeat center center fixed;
+	color: color(dark);
+	height:  100%;
+	width: 100%;
+	background-color: color(background);
+	text-align: center;
+}
+
+#person {
+	width: 80%;
+	border-radius:50%;
+}
+#personText {
+	font-size: 19px;
+}
+.col-sm-6 img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10%;
+}
+
+footer {
+	width: 100%;
+	background-color:  color(banner);
+	padding: 2% 5% 2% 5%;
+	color: color(main);
+	#icon {
+		width: 50%;
+	}
+	.birdseed {
+		color: color(birdseed);
+	}
+}
+
+@media (max-width:  768px) {
+	.landing-text h1 {
+		font-size: 300%;
+	}
+	.fa {
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon {
+		padding-top: 5%;
+		max-width:  7%;
+	}
+}
